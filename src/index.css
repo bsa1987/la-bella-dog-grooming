@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-charcoal-900 antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-blush-500 hover:bg-blush-600 text-white px-6 py-3 rounded-full font-sans font-medium text-sm tracking-wide transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-charcoal-900 px-6 py-3 rounded-full font-sans font-medium text-sm tracking-wide transition-all duration-300;
+  }
+  .btn-dark {
+    @apply inline-flex items-center gap-2 bg-charcoal-900 hover:bg-charcoal-800 text-white px-6 py-3 rounded-full font-sans font-medium text-sm tracking-wide transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .section-label {
+    @apply font-serif italic text-blush-500 text-lg;
+  }
+  .section-heading {
+    @apply font-serif text-3xl md:text-4xl text-charcoal-900;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-blush-100 overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+  .input-field {
+    @apply w-full border border-blush-200 rounded-xl px-4 py-3 text-charcoal-900 placeholder-charcoal-400 text-sm focus:outline-none focus:ring-2 focus:ring-blush-300 focus:border-transparent transition-all duration-200 bg-white;
+  }
+  .select-field {
+    @apply w-full border border-blush-200 rounded-xl px-4 py-3 text-charcoal-900 text-sm focus:outline-none focus:ring-2 focus:ring-blush-300 focus:border-transparent transition-all duration-200 bg-white appearance-none;
+  }
+  .label {
+    @apply block text-xs font-medium text-charcoal-600 mb-1.5 uppercase tracking-wider;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  .bg-overlay {
+    background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.05) 100%);
+  }
+}

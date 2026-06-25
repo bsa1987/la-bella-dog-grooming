@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        blush: {
+          50: '#fdf6f7',
+          100: '#faeaec',
+          200: '#f5d4d8',
+          300: '#ecb5be',
+          400: '#df8d9c',
+          500: '#c4768a',
+          600: '#b05c73',
+          700: '#924860',
+          800: '#7a3d52',
+          900: '#673547',
+        },
+        brown: {
+          50: '#faf6f3',
+          100: '#f3ece4',
+          200: '#e6d6c6',
+          300: '#d4b99e',
+          400: '#be9473',
+          500: '#a87855',
+          600: '#926049',
+          700: '#7a4e3e',
+          800: '#654237',
+          900: '#553832',
+        },
+        cream: {
+          50: '#fefdfb',
+          100: '#fdf8f0',
+          200: '#faf0de',
+          300: '#f5e4c3',
+          400: '#edd49f',
+          500: '#e4c07a',
+        },
+        charcoal: {
+          50: '#f6f6f6',
+          100: '#e7e7e7',
+          200: '#d1d1d1',
+          300: '#b0b0b0',
+          400: '#888888',
+          500: '#6d6d6d',
+          600: '#5d5d5d',
+          700: '#4f4f4f',
+          800: '#454545',
+          900: '#2d2d2d',
+          950: '#1a1a1a',
+        },
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};
