@@ -9,7 +9,7 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1739137594820-6d7e65f058d5?auto=format&fit=crop&w=1920&q=80"
+          src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Beautifully groomed dog at La Bella Dog Grooming Swansea"
           className="w-full h-full object-cover object-center"
           loading="eager"
