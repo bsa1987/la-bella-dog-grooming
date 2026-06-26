@@ -4,6 +4,7 @@ import Gallery from './components/Gallery';
 import About from './components/About';
 import Reviews from './components/Reviews';
 import AppointmentForm from './components/AppointmentForm';
+import Contact from './components/Contact';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <About />
       <Reviews />
       <AppointmentForm />
+      <Contact />
     </>
   );
 }
