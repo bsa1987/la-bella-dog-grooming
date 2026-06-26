@@ -34,7 +34,7 @@ export async function createAppointment(
     await resend.emails.send({
       from: 'La Bella Dog Grooming <onboarding@resend.dev>',
       to: [ownerEmail],
-      reply_to: email,
+      replyTo: [email],
       subject: `New Appointment Request – ${dogName} (${name})`,
       html: `
         <div style="font-family:Georgia,serif;max-width:580px;margin:0 auto;color:#2d2d2d;">
