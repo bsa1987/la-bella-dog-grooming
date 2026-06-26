@@ -3,6 +3,7 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 import About from './components/About';
 import Reviews from './components/Reviews';
+import AppointmentForm from './components/AppointmentForm';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Gallery />
       <About />
       <Reviews />
+      <AppointmentForm />
     </>
   );
 }
