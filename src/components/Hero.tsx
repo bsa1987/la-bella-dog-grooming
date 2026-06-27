@@ -54,7 +54,7 @@ export default function Hero() {
             family.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
 
             <button
               onClick={() => scrollTo('appointment')}
