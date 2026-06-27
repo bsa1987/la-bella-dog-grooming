@@ -1,13 +1,13 @@
 export default function PhotoStrip() {
   const images = [
-    "https://placedog.net/900/600?id=1",
-    "https://placedog.net/900/600?id=2",
-    "https://placedog.net/900/600?id=3",
-    "https://placedog.net/900/600?id=4",
-    "https://placedog.net/900/600?id=5",
-    "https://placedog.net/900/600?id=6",
-    "https://placedog.net/900/600?id=7",
-    "https://placedog.net/900/600?id=8",
+    "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=80",
+    "https://images.unsplash.com/photo-1518715308788-3005759c95cf?auto=format&fit=crop&w=900&q=80",
   ];
 
   const photos = [...images, ...images];
@@ -17,7 +17,6 @@ export default function PhotoStrip() {
       id="gallery"
       className="relative overflow-hidden bg-[#faf7f1] py-8"
     >
-      {/* Top gold divider */}
       <div className="mx-auto mb-8 h-px w-[95%] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
 
       <div className="marquee overflow-hidden">
@@ -38,7 +37,6 @@ export default function PhotoStrip() {
         </div>
       </div>
 
-      {/* Bottom gold divider */}
       <div className="mx-auto mt-8 h-px w-[95%] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
     </section>
   );
