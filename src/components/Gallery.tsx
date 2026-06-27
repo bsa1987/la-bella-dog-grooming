@@ -13,7 +13,7 @@ export default function PhotoStrip() {
   const photos = [...images, ...images];
 
   return (
-    <section className="relative overflow-hidden py-12 bg-[#faf7f1]">
+    <section className="relative overflow-hidden py-10 bg-gradient-to-b from-[#d4af37] via-[#faf7f1] to-[#d4af37]">
 
       {/* Gold top */}
       <div className="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-[#d9b36b] via-[#f3dfae] to-transparent" />
