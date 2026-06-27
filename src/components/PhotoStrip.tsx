@@ -1,13 +1,13 @@
 export default function PhotoStrip() {
   const images = [
-    "https://picsum.photos/seed/dog1/900/600",
-    "https://picsum.photos/seed/dog2/900/600",
-    "https://picsum.photos/seed/dog3/900/600",
-    "https://picsum.photos/seed/dog4/900/600",
-    "https://picsum.photos/seed/dog5/900/600",
-    "https://picsum.photos/seed/dog6/900/600",
-    "https://picsum.photos/seed/dog7/900/600",
-    "https://picsum.photos/seed/dog8/900/600",
+    "https://placedog.net/900/600?id=1",
+    "https://placedog.net/900/600?id=2",
+    "https://placedog.net/900/600?id=3",
+    "https://placedog.net/900/600?id=4",
+    "https://placedog.net/900/600?id=5",
+    "https://placedog.net/900/600?id=6",
+    "https://placedog.net/900/600?id=7",
+    "https://placedog.net/900/600?id=8",
   ];
 
   const photos = [...images, ...images];
@@ -29,7 +29,7 @@ export default function PhotoStrip() {
             >
               <img
                 src={image}
-                alt={`Dog ${index + 1}`}
+                alt="Dog grooming"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
               />
