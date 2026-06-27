@@ -1,19 +1,13 @@
 export default function PhotoStrip() {
   const images = [
-    "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80",
-
-    // Replaced broken image
-    "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=900",
-
-    "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80",
-
-    // Replaced broken image
-    "https://images.pexels.com/photos/4587990/pexels-photo-4587990.jpeg?auto=compress&cs=tinysrgb&w=900",
-
-    "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1537151625747-768eb6cf92b?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1518715308788-3005759c95cf?auto=format&fit=crop&w=900&q=80",
+    "https://picsum.photos/seed/dog1/900/600",
+    "https://picsum.photos/seed/dog2/900/600",
+    "https://picsum.photos/seed/dog3/900/600",
+    "https://picsum.photos/seed/dog4/900/600",
+    "https://picsum.photos/seed/dog5/900/600",
+    "https://picsum.photos/seed/dog6/900/600",
+    "https://picsum.photos/seed/dog7/900/600",
+    "https://picsum.photos/seed/dog8/900/600",
   ];
 
   const photos = [...images, ...images];
@@ -35,7 +29,7 @@ export default function PhotoStrip() {
             >
               <img
                 src={image}
-                alt="Dog grooming"
+                alt={`Dog ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
               />
