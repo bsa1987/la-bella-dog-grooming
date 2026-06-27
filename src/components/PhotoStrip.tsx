@@ -10,17 +10,18 @@ export default function PhotoStrip() {
     "https://images.unsplash.com/photo-1518715308788-3005759c95cf?auto=format&fit=crop&w=900&q=80",
   ];
 
-  // Duplicate images for seamless looping
   const photos = [...images, ...images];
 
   return (
-    <section className="relative overflow-hidden bg-[#faf7f1] py-8">
-
+    <section
+      id="gallery"
+      className="relative overflow-hidden bg-[#faf7f1] py-8"
+    >
       {/* Top gold divider */}
       <div className="mx-auto mb-8 h-px w-[95%] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
 
-      <div className="marquee">
-        <div className="marquee-track">
+      <div className="marquee overflow-hidden">
+        <div className="marquee-track flex gap-6">
           {photos.map((image, index) => (
             <div
               key={index}
@@ -28,7 +29,7 @@ export default function PhotoStrip() {
             >
               <img
                 src={image}
-                alt=""
+                alt="Dog grooming"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
               />
@@ -39,7 +40,6 @@ export default function PhotoStrip() {
 
       {/* Bottom gold divider */}
       <div className="mx-auto mt-8 h-px w-[95%] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
-
     </section>
   );
 }
