@@ -32,16 +32,16 @@ export default function Hero() {
 
           {/* Logo */}
           <img
-            src="/Labella.png"
-            alt="La Bella Dog Grooming"
-            className="w-[340px] md:w-[460px] lg:w-[560px] xl:w-[600px] mb-10 drop-shadow-2xl select-none"
-          />
+  src="/Labella.png"
+  alt="La Bella Dog Grooming"
+  className="-ml-6 md:-ml-8 lg:-ml-10 w-[340px] md:w-[460px] lg:w-[560px] xl:w-[600px] mb-3 drop-shadow-2xl select-none"
+/>
 
           <p className="font-serif italic text-blush-300 text-base md:text-lg mb-4">
             Swansea's boutique dog grooming salon
           </p>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight text-white drop-shadow-2xl">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[0.95] text-white drop-shadow-2xl">
             Professional
             <br />
             <span className="text-blush-300">Dog Grooming</span>
