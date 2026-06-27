@@ -50,7 +50,44 @@
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
+
   .bg-overlay {
-    background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.05) 100%);
+    background: linear-gradient(
+      to right,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.2) 60%,
+      rgba(0,0,0,0.05) 100%
+    );
+  }
+}
+
+/* ===========================================
+   Infinite Photo Strip
+=========================================== */
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollPhotos 40s linear infinite;
+  padding: 12px 0;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollPhotos {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
