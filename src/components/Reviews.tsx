@@ -2,22 +2,22 @@ import { Star } from 'lucide-react';
 
 const reviews = [
   {
-    name: 'Sarah L.',
-    location: 'Sketty, Swansea',
-    text: "Bella is absolutely amazing with my dog. He always comes out looking and smelling beautiful — so caring and professional. I wouldn't take him anywhere else.",
-    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&q=80',
+    name: "Naomi Miller",
+    location: "Local Guide • Google Review",
+    review:
+      "Dawn and Sam are the ONLY people who could ever cut our Shih Tzu's hair. They are just amazing!!! I can't recommend them enough!",
   },
   {
-    name: 'James T.',
-    location: 'Mumbles, Swansea',
-    text: "The best dog groomer in Swansea. My puppy was nervous but Bella handled her with such patience. She looks incredible every single time. Five stars, every visit.",
-    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&q=80',
+    name: "Leanne Bennett",
+    location: "Google Review",
+    review:
+      "Amazing ladies at this groomers, brilliant with my dog who is not very good when it comes to having her nails done. We'll be telling people to come here and we'll definitely be back.",
   },
   {
-    name: 'Emma R.',
-    location: 'Uplands, Swansea',
-    text: "I wouldn't trust anyone else with my dog. A lovely professional salon — Bella is always kind, thorough and gentle. My Cockapoo comes home with a huge smile!",
-    avatar: 'https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg?auto=compress&cs=tinysrgb&w=100&q=80',
+    name: "Ashleigh Pyle",
+    location: "Google Review",
+    review:
+      "3 puppy grooms and now his first adult groom. Wouldn't go anywhere else. Lovely ladies and fantastic service. Lenny loves coming here. Thank you!",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Reviews() {
                 <Star key={i} size={14} className="fill-amber-400 text-amber-400" />
               ))}
             </div>
-            <span className="text-charcoal-700 text-sm font-medium">5.0 · 100+ happy clients</span>
+            <span className="text-charcoal-700 text-sm font-medium">4.7 • 45 Google Reviews</span>
           </div>
         </div>
 
