@@ -10,28 +10,35 @@ export default function PhotoStrip() {
     "https://images.unsplash.com/photo-1518715308788-3005759c95cf?auto=format&fit=crop&w=900&q=80",
   ];
 
-  // Duplicate for seamless scrolling
+  // Duplicate images for seamless looping
   const photos = [...images, ...images];
 
   return (
-    <section className="relative overflow-hidden py-10 bg-gradient-to-b from-[#d4af37] via-[#faf7f1] to-[#d4af37]">
+    <section className="relative overflow-hidden bg-[#faf7f1] py-8">
+
+      {/* Top gold divider */}
+      <div className="mx-auto mb-8 h-px w-[95%] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
 
       <div className="marquee">
         <div className="marquee-track">
           {photos.map((image, index) => (
             <div
               key={index}
-              className="w-[320px] h-[220px] flex-shrink-0 overflow-hidden rounded-3xl shadow-xl"
+              className="w-[320px] h-[220px] flex-shrink-0 overflow-hidden rounded-3xl shadow-lg"
             >
               <img
                 src={image}
                 alt=""
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                loading="lazy"
               />
             </div>
           ))}
         </div>
       </div>
+
+      {/* Bottom gold divider */}
+      <div className="mx-auto mt-8 h-px w-[95%] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
 
     </section>
   );
