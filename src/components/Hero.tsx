@@ -34,7 +34,7 @@ export default function Hero() {
           <img
   src="/Labella.png"
   alt="La Bella Dog Grooming"
-  className="-ml-6 md:-ml-8 lg:-ml-10 w-[340px] md:w-[460px] lg:w-[560px] xl:w-[600px] mb-3 drop-shadow-2xl select-none"
+  className="-mt-6 -ml-6 md:-mt-8 md:-ml-8 lg:-mt-8 lg:-ml-10 w-[340px] md:w-[460px] lg:w-[560px] xl:w-[600px] mb-3 drop-shadow-2xl select-none"
 />
 
           <p className="font-serif italic text-blush-300 text-base md:text-lg mb-4">
