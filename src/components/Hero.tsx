@@ -22,10 +22,8 @@ export default function Hero() {
         />
 
         {/* Left dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-
-        {/* Bottom fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/5 to-transparent" />
+        
       </div>
 
       {/* Content */}
